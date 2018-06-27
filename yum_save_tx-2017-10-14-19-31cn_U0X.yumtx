@@ -1,0 +1,63 @@
+278:b37ae6a36d5a947493f93f201fa245f86530805e
+0
+6
+aliepel:12401:1507907910
+aliyun:6706:1490724196
+puppetlabs-deps:77:1507238134
+puppetlabs-products:564:1507238202
+zabbix:158:1506450831
+zabbix-non-supported:15:None
+6
+mbr: mysql-libs,x86_64,0,5.1.73,7.el6 20
+  repo: installed
+  ts_state: ud
+  output_state: 90
+  isDep: False
+  reason: user
+  reinstall: False
+  relatedto: mysql-libs,x86_64,0,5.1.73,8.el6_8@a:updatedby
+  updated_by: mysql-libs,x86_64,0,5.1.73,8.el6_8@a
+mbr: perl-DBD-MySQL,x86_64,0,4.013,3.el6 70
+  repo: aliyun
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: mysql-server,x86_64,0,5.1.73,8.el6_8@a:dependson
+  depends_on: mysql-server,x86_64,0,5.1.73,8.el6_8@a
+mbr: mysql-server,x86_64,0,5.1.73,8.el6_8 70
+  repo: aliyun
+  ts_state: u
+  output_state: 20
+  isDep: False
+  reason: user
+  reinstall: False
+mbr: perl-DBI,x86_64,0,1.609,4.el6 70
+  repo: aliyun
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: mysql-server,x86_64,0,5.1.73,8.el6_8@a:dependson perl-DBD-MySQL,x86_64,0,4.013,3.el6@a:dependson perl-DBD-MySQL,x86_64,0,4.013,3.el6@a:dependson
+  depends_on: mysql-server,x86_64,0,5.1.73,8.el6_8@a
+mbr: mysql,x86_64,0,5.1.73,8.el6_8 70
+  repo: aliyun
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: mysql-server,x86_64,0,5.1.73,8.el6_8@a:dependson
+  depends_on: mysql-server,x86_64,0,5.1.73,8.el6_8@a
+mbr: mysql-libs,x86_64,0,5.1.73,8.el6_8 70
+  repo: aliyun
+  ts_state: u
+  output_state: 10
+  isDep: True
+  reason: user
+  reinstall: False
+  relatedto: mysql-libs,x86_64,0,5.1.73,7.el6@i:updates mysql,x86_64,0,5.1.73,8.el6_8@a:dependson perl-DBD-MySQL,x86_64,0,4.013,3.el6@a:dependson perl-DBD-MySQL,x86_64,0,4.013,3.el6@a:dependson
+  depends_on: mysql,x86_64,0,5.1.73,8.el6_8@a
+  updates: mysql-libs,x86_64,0,5.1.73,7.el6@i

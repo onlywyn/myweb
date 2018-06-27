@@ -1,0 +1,1 @@
+<Context path="/jenkins" debug="1" docBase="/tmp" reloadable="true" unpackWARs="true" autoDeploy="true"></Context>  

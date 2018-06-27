@@ -1,0 +1,71 @@
+263:d60fa59381cc595fa2b7515f8d824dec168a57f3
+0
+6
+aliepel:12401:1507907910
+aliyun:6706:1490724196
+puppetlabs-deps:77:1507238134
+puppetlabs-products:564:1507238202
+zabbix:158:1506450831
+zabbix-non-supported:15:None
+7
+mbr: zabbix-proxy-mysql,x86_64,0,3.0.11,1.el6 70
+  repo: zabbix
+  ts_state: u
+  output_state: 20
+  isDep: False
+  reason: user
+  reinstall: False
+mbr: OpenIPMI-libs,x86_64,0,2.0.16,14.el6 70
+  repo: aliyun
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: zabbix-proxy-mysql,x86_64,0,3.0.11,1.el6@a:dependson
+  depends_on: zabbix-proxy-mysql,x86_64,0,3.0.11,1.el6@a
+mbr: unixODBC,x86_64,0,2.2.14,14.el6 70
+  repo: aliyun
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: zabbix-proxy-mysql,x86_64,0,3.0.11,1.el6@a:dependson
+  depends_on: zabbix-proxy-mysql,x86_64,0,3.0.11,1.el6@a
+mbr: fping,x86_64,0,2.4b2,16.el6 70
+  repo: zabbix-non-supported
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: zabbix-proxy-mysql,x86_64,0,3.0.11,1.el6@a:dependson
+  depends_on: zabbix-proxy-mysql,x86_64,0,3.0.11,1.el6@a
+mbr: libtool-ltdl,x86_64,0,2.2.6,15.5.el6 70
+  repo: aliyun
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: unixODBC,x86_64,0,2.2.14,14.el6@a:dependson
+  depends_on: unixODBC,x86_64,0,2.2.14,14.el6@a
+mbr: lm_sensors-libs,x86_64,0,3.1.1,17.el6 70
+  repo: aliyun
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: net-snmp-libs,x86_64,1,5.5,60.el6@a:dependson
+  depends_on: net-snmp-libs,x86_64,1,5.5,60.el6@a
+mbr: net-snmp-libs,x86_64,1,5.5,60.el6 70
+  repo: aliyun
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: zabbix-proxy-mysql,x86_64,0,3.0.11,1.el6@a:dependson
+  depends_on: zabbix-proxy-mysql,x86_64,0,3.0.11,1.el6@a
